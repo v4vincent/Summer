@@ -1,12 +1,14 @@
 
+function playGuessingGame(numToGuess, totalGuesses){
 
+    for (let i = 0; i < totalGuesses; i++) {
+        let guess1 = parseInt(prompt("Enter a number between 1 and 100"))
+        if (guess1 === numToGuess){
+            return i+1;
 
-let nums = ["hello", "what", "lol"];
+        }
+    }
 
-nums.forEach((word, index) => {
-    console.log(word + ": " + index);
-})
+}
 
-nums.forEach(function (word) {
-    console.log(word);
-})
+playGuessingGame(5,10)
